@@ -1,0 +1,29 @@
+{
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "slack@claude-plugins-official": true,
+    "kotlin-lsp@claude-plugins-official": true,
+    "figma@claude-plugins-official": true,
+    "understand-anything@understand-anything": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "understand-anything": {
+      "source": {
+        "source": "github",
+        "repo": "Lum1104/Understand-Anything"
+      }
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "voiceEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true,
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  }
+}
