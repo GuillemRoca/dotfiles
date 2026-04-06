@@ -1,5 +1,9 @@
 {
   "model": "opus[1m]",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "enabledPlugins": {
     "slack@claude-plugins-official": true,
     "kotlin-lsp@claude-plugins-official": true,
