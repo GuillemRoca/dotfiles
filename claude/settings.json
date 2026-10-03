@@ -1,16 +1,23 @@
 {
-  "model": "opus[1m]",
   "attribution": {
     "commit": "",
     "pr": "",
     "sessionUrl": false
   },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "opus[1m]",
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
   "enabledPlugins": {
-    "slack@claude-plugins-official": true,
     "kotlin-lsp@claude-plugins-official": true,
-    "figma@claude-plugins-official": true,
     "understand-anything@understand-anything": true,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "agent-skills-android@guillemroca": true,
+    "cloudflare@cloudflare": true
   },
   "extraKnownMarketplaces": {
     "understand-anything": {
@@ -18,17 +25,26 @@
         "source": "github",
         "repo": "Lum1104/Understand-Anything"
       }
+    },
+    "guillemroca": {
+      "source": {
+        "source": "github",
+        "repo": "GuillemRoca/claude-plugins"
+      }
+    },
+    "cloudflare": {
+      "source": {
+        "source": "github",
+        "repo": "cloudflare/skills"
+      }
     }
   },
   "alwaysThinkingEnabled": true,
-  "voiceEnabled": true,
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
+  "theme": "auto",
   "skipAutoPermissionPrompt": true,
-  "permissions": {
-    "defaultMode": "auto"
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/statusline-command.sh"
-  }
+  "voiceEnabled": true
 }
