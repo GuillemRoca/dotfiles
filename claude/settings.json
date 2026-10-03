@@ -2,7 +2,8 @@
   "model": "opus[1m]",
   "attribution": {
     "commit": "",
-    "pr": ""
+    "pr": "",
+    "sessionUrl": false
   },
   "enabledPlugins": {
     "slack@claude-plugins-official": true,
